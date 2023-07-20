@@ -1,0 +1,174 @@
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  
+  .modal-contenido {
+    background-color: #fff;
+    width: 400px;
+    max-width: 90%;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilos adicionales para el formulario dentro del modal */
+  .modal-contenido form input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .modal-contenido form button {
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3388ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .modal-contenido form button[type="button"] {
+    background-color: #ccc;
+  }
+  
+
+  
+
+
+/* Tabla de cientes */
+.table {
+    width: 98%;
+    margin-left: 12px;
+}
+
+.table_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+
+}
+
+.table_header p {
+   color: #3388ff; 
+   font-family: 'Patrick Hand', cursive;
+   font-size: 20px;
+  
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 8px;
+    color: #fff3ff;
+}
+
+td button:nth-child(1) {
+    border-radius: 8px;
+    background-color: #3388ff;
+}
+
+td button:nth-child(2) {
+    border-radius: 8px;
+    background-color: #d8313c;
+}
+
+.crear_nuevo {
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #fff3ff;
+    background-color: #3388ff;
+}
+
+.crear_nuevo i {
+    color: #fff3ff;
+}
+
+.crear_nuevo:hover {
+    box-shadow: 0 5px 20px rgba(13, 80, 169, 0.333);
+  }
+
+.table .table_header input {
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid #3388ff;
+    border-radius: 40px;
+    color: #3388ff;
+}
+
+
+.table .table_header input {
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid #3388ff;
+    border-radius: 40px;
+    color: #3388ff;
+}
+
+.table_section {
+    height: 500px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background: rgba(50, 149, 255, 0.8);
+    color: #fff3ff;
+    font-size: 15px;
+}
+
+th,td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 12px;
+    word-break: break-all;
+    text-align: center;
+}
+
+tr:hover td {
+    background: rgba(50, 149, 255, 0.4);
+    cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+  

@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: -20px 0 50px;
+}
+
+h1 {
+    color: #fff3ff;
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    top: -40px;
+}
+
+.h1-t {
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+}
+
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+.p-text {
+    color: white;
+}
+
+span {
+    color: #fff3ff;
+    font-size: 12px;
+}
+
+a {
+    color: #fff3ff;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.volver {
+    width: 100%;
+    position: relative;
+    top: 30px;
+}
+
+.volver i {
+    color: #3388ff;
+    font-size: 1.8em;
+    margin-left: 10px;
+}
+
+.container {
+    background: linear-gradient(rgba(33, 165, 186, .6), rgba(33, 165, 186, .2)), url(../img/tranding5.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: right;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
+    margin-top: 6%;
+    position: relative;
+    width: 428px;
+    height: 420px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.form-container {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-left: 33px;
+    top: 0;
+    width: 85%;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-container span {
+    position: relative;
+    margin-top: 20px;
+}
+
+.form-container input {
+    background: #eee;
+    border: 0.5px solid #3388ff;
+    outline: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid white;
+    background: #3388ff;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#btn-enviar {
+    margin-top: 15px;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}

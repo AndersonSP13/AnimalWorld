@@ -1,0 +1,171 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.volver {
+    width: 100%;
+    position: relative;
+    top: 10px;  
+}
+
+.volver a{
+  text-decoration: none;
+}
+
+.volver i {
+    color: #3388ff;
+    font-size: 1.8em;
+    margin-left: 10px;
+}
+
+
+#calendar {
+    width: 80%;
+    height: 40%;
+    margin-left: 145px;
+    margin-top: 20px;
+}
+
+
+#calendar .fc-button {
+    background-color: #3388ff; 
+    color: #ffffff; 
+    border-color: #3388ff; 
+}
+
+#calendar.fc-button:active {
+    outline: none; 
+    box-shadow: none;
+    background-color: aqua;
+  }
+  
+#calendar .fc-button:hover {
+    opacity: .7; 
+    color: #ffffff; 
+    border-color: #3388ff;
+}
+
+
+#calendar .fc-day-today {
+    background-color: rgba(26, 132, 167, 0.145); /* Cambia el color de fondo  */
+}
+
+
+#calendar .fc-toolbar-title{
+    color: #3388ff;
+    text-transform: uppercase; /* Cambia los meses a mayúsculas */
+}
+
+#calendar .fc table {
+    border-color: #3388ff;
+}
+
+#calendar .fc-daygrid-day-number,.fc-col-header-cell-cushion {
+    color: #3388ff; /* Cambia el color de los números */
+  }
+
+
+
+
+
+
+ /* Modal Styles */
+ .modal {
+  display: none; 
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.contenedor-modal {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Como cambiar el color al dataTime */
+input[type="datetime-local"] {
+  color: #3388ff;
+}
+
+/* Custom DateTime icon color */
+.custom-datetime-icon {
+  color: #3388ff;
+}
+
+.modal h1 {
+  font-family: 'Patrick Hand', cursive;
+  color: #3388ff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal form {
+  margin-bottom: 20px;
+}
+
+.modal form .mb-3{
+  color: #3388ff;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #3388ff;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #3388ff;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-footer button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #ff4733;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+
+/* Estilos para que el calendario sea responsive en dispositivos móviles */
+@media screen and (max-width: 600px) {
+  #calendar {
+    max-width: 400px; /* Ajusta el ancho máximo para pantallas pequeñas */
+  }
+}

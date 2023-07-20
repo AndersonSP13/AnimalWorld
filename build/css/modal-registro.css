@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+/* Ventana modal */
+#btn-modal {
+    display: none;
+}
+
+.container-modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(144, 148, 150, 0.8);
+}
+
+
+.content-modal {
+    width: 100%;
+    max-width: 340px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.content-modal h1 {
+    color: #3388ff;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    margin-bottom: 15px;
+}
+
+.content-modal form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-modal form input {
+    background: #eee;
+    border: 0.5px solid #3388ff;
+    outline: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 285px;
+}
+
+.content-modal .botones {
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+   
+}
+
+.content-modal .botones #cancelButton {
+    margin: 5px;
+}
+.content-modal .botones #registrarButton {
+    margin: 5px;
+}
+
+
+.content-modal .botones .btn-cerrar #cancelButton{
+    padding: 7px 10px;
+    background-color: #ff4733;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modal .botones .btn-cerrar #cancelButton:hover {
+    background-color: #831818;
+}
+
+.content-modal .botones .btn-agregar #registrarButton{
+    padding: 7px 10px;
+    background-color: #3388ff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modal .botones .btn-agregar #registrarButton:hover {
+    background-color: #185e83;
+} 
+
+@media (max-width:800px){
+    .content-modal {
+        width: 90%;
+    }
+}
+/* Fin ventana modal */

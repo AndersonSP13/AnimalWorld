@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background-color: palegoldenrod;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.logo-titulo {
+    font-family: 'Patrick Hand', cursive;
+    color: #3388ff;
+}
+
+.titulo {
+    font-family: 'Patrick Hand', cursive;
+    color: #3388ff;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover {
+    color: #3388ff;
+    border-bottom: 2px solid #3388ff;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-cerrar-sesion {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding: 10px 15px;
+    background-color: #3388ff;
+    color: white;
+}
+
+
+/*Pagina Responsive*/
+@media (max-width: 1535px) {
+    header {
+        padding: 15px 3%;
+        transition: .2s;
+    }
+}
+
+
+
+@media (max-width: 990px) {
+    #menu-icon {
+        display: block;
+    }
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 250px;
+        height: 88.1vh;
+        background: #3388ff;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a {
+        display: block;
+        margin: 20px 0px;
+        color: white;
+    }
+    .navlist a:hover {
+        color: black;
+        border-bottom: 2px solid black;
+    }
+    .navlist.open {
+        right: 0;
+    }
+}

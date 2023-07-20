@@ -1,0 +1,528 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.logo-titulo {
+    font-family: 'Patrick Hand', cursive;
+    color: #3388ff;
+}
+
+.titulo {
+    font-family: 'Patrick Hand', cursive;
+    color: #3388ff;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover {
+    color: #3388ff;
+    border-bottom: 2px solid #3388ff;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-salir a {
+    display: inline-block;
+    color: white;
+    padding: 6px 10px;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50%;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.btn-salir a:hover {
+    background: #3388ff;
+    border: 1px solid #3388ff;
+    transform: translateX(8px);
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.6)), url(../img/Peluqueria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section {
+    padding: 0 19%;
+}
+
+.hero-text {
+    margin-top: 80px;
+}
+
+.hero-text h1 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 50px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-text a {
+    display: inline-block;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    margin-top: 30px;
+}
+
+.hero-text a:hover {
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.hero-text a.ctaa {
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.hero-text a.ctaa i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icons {
+    position: absolute;
+    top: 55%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.icons i {
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+
+.icons i:hover {
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+/* Cards de servicios */
+.container {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    padding: 90px;
+    height: 100vh;
+    background: #ffffff;
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    transition: 0.5s;
+    background: linear-gradient(rgba(33, 165, 186, .5), rgba(21, 142, 169, .8));
+    color: white;
+}
+
+
+.container .card .imgBx {
+    position: absolute;
+    width: 280px;
+    height: 220px;
+    background: #fff3ff;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+    top: 20px;
+}
+
+.container .card:hover .imgBx {
+    top: -80px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(22, 120, 185, .5);
+}
+
+.container .card .imgBx  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 32px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    top: 150px;
+    height: 250px;
+}
+
+.container .card .content h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.container .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 8px 15px;
+    background: #ffffff;
+    color: #3388ff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/*sobre Baño*/
+.contenedor-informacion {
+    width: 100%;
+    height: 70vh;
+    background: transparent;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 90px;
+}
+
+.contenedor-informacion .info h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 3em;
+    color: #3388ff;
+    text-align: center;
+}
+
+
+.contenedor-informacion .info p {
+    font-size: 16px;
+    margin-top: 30px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    color: #3388ff;
+    text-align: justify;
+}
+
+.contenedor-informacion .info-img {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-informacion .info-img img {
+    width: 80%;
+}
+
+
+/* Informacion sobre la ubicacion de la veterinaria */
+.contenedor-ubicacion {
+    width: 100%;
+    height: 70vh;
+    background: rgba(213, 222, 227, .3);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding: 90px;
+}
+
+.contenedor-ubicacion .map {
+    position: relative;
+    text-align: center;
+    top: -70px;
+}
+
+.contenedor-ubicacion .info-ubicacion {
+    position: relative;
+    width: 80%;
+    margin-left: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-ubicacion .info-ubicacion h2 {
+    font-family: 'Patrick Hand', cursive;
+    position: relative;
+    color: #3388ff;
+    font-size: 2em;
+    top: -160px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.contenedor-ubicacion .info-ubicacion p {
+    position: relative;
+    font-size: 16px;
+    text-align: justify;
+    color: #3388ff;
+    top: -110px;
+}
+
+.contenedor-ubicacion .contact-ubicacion {
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.contenedor-ubicacion .contact-ubicacion span {
+    display: block;
+    color: #3388ff;
+    font-size: 16px;
+
+}
+
+
+/*Pagina Responsive*/
+@media (max-width: 1535px) {
+    header {
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons {
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scroll-down {
+        right: 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1460px) {
+    section {
+        padding: 0 12%;
+        transition: .2s;
+    }
+    #tranding {
+        padding: 7rem 0;
+    }
+}
+
+@media (max-width: 1340px) {
+    .hero {
+        width: 100%;
+        height: auto;
+        background-position: center;
+    }
+    .hero-text h1 {
+        font-size: 50px;
+        margin: 0 0 30px;
+    }
+    
+}
+
+@media (max-width: 1195px) {
+    section {
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text {
+        padding-top: 115px;
+    }
+    .hero-img {
+        text-align: center;
+    }
+    .hero-img img {
+        width: 560px;
+        height: auto;
+    }
+    .hero {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icons {
+        display: none;
+    }
+    .scroll-down {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container .card:hover .imgBx {
+        top: -50px;
+        scale: 0.75;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    }
+
+    .container .card:hover .content {
+        top: 180px;
+        height: 250px;
+    }
+    
+}
+
+@media (max-width: 990px) {
+    #menu-icon {
+        display: block;
+    }
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 250px;
+        height: 88.1vh;
+        background: #3388ff;
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a {
+        display: block;
+        margin: 20px 0px;
+        color: white;
+    }
+    .navlist a:hover {
+        color: black;
+        border-bottom: 2px solid black;
+    }
+    .navlist.open {
+        display: block;
+        right: 0;
+    }
+
+}
+
+@media (max-width: 785px) {
+    .banner-container .banner .row2  {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .hero-img {
+        width: 100%;
+        height: auto;
+    }
+    .banner-container .banner .row2  {
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .contenedor-informacion {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedor-informacion .info-img img {
+        display: flex;
+        width: 100%; 
+    }
+
+    .footer-servicios {
+        position: relative;
+        margin-top: 180px;
+    }
+
+    .footer-servicios .menu-footer {
+        display: none;
+     }
+}

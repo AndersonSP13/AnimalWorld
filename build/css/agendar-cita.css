@@ -1,0 +1,127 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.volver {
+    width: 100%;
+    position: relative;
+    top: 10px;  
+}
+
+.volver a{
+  text-decoration: none;
+}
+
+.volver i {
+    color: white;
+    font-size: 1.8em;
+    margin-left: 10px;
+}
+
+
+
+
+/* Formulario */
+
+.contenedor {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+
+.contenedor .contenedor-modal {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    background: url(../img/retrato.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+  /* Como cambiar el color al dataTime */
+  input[type="datetime-local"] {
+    color: #3388ff;
+  }
+
+  .contenedor .contenedor-modal form {
+    width: 480px;
+    margin-left: 500px;
+    margin-top: 3px;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  /* Custom DateTime icon color */
+  .custom-datetime-icon {
+    color: #3388ff;
+  }
+  
+
+  .contenedor .contenedor-modal form .mb-3{
+    color: #3388ff;
+  }
+  
+  .contenedor .contenedor-modal .form-label {
+    font-size: 14px;
+    color: #3388ff;
+    margin-left: 40px;
+  }
+  
+  .contenedor .contenedor-modal .form-control {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #3388ff;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-left: 40px;
+  }
+  
+  .contenedor .contenedor-modal .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contenedor .contenedor-modal .modal-footer button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 285px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .contenedor {
+    padding: 10px;
+  }
+
+  .form-control,
+  .form-select {
+    width: 100%;
+  }
+}
+
+
